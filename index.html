@@ -1,5 +1,5 @@
 <!doctype html>
-<html amp lang="en">
+<html amp lang="pl">
 <head>
     <meta charset="utf-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
@@ -25,21 +25,58 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "logo header header"
-    "offer offer portfolio"
+    "offer portfolio portfolio"
     "footer footer footer";
 }
         .main_header{
             grid-area: header;
+            margin-top: 50px;
+            font-family: "Calibri Light";
+            font-size: 50px;
         }
         .logo{
             grid-area: logo;
-            margin: 20px;
+            margin: 30px;
         }
         .content{
             grid-area: offer;
+            margin-left: 20px;
+            line-height:25px;
+            font-family: "Calibri Light";
+            font-weight: 600px;
         }
-        li{
-            text-space: 20px;
+        ul{
+            line-height: 30px;
+            font-family: "Calibri Light";
+        }
+        .portfolio {
+            grid-area: portfolio;
+            font-family: "Calibri Light";
+        }
+        .shop_example {
+            max-width: 230px;
+
+        }
+        <!--.images_layout {
+            display: flex;
+            flex-shrink: 1;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-right: 20px;
+        }-->
+        .footer {
+            grid-area: footer;
+            margin-left: 20px;
+            line-height: 25px;
+            font-family: "Calibri Light";
+        }
+        .button_link {
+            line-height: 2.5;
+            text-align: center;
+            color: #6d6d6d;
+            border-radius: 10px;
+            font-size: 20px;
+            background-color: beige;
         }
     </style>
 </head>
@@ -47,18 +84,47 @@
 <h1 class="main_header">ITM-SYSTEM Internet solutions for your business</h1>
 <amp-img class="logo" src="img/itm_logo.png" alt="ITM_logo" height="90" width="230"></amp-img>
 <article class="content">
+    <h2>Kim jesteśmy</h2>
     Firma  ITM-SYSTEM działa na rynku IT od 2006 roku. Wyróżnia nas profesjonalizm, zaangażowanie w realizowane projekty i wieloletnie doświadczenie.<br>
     Zapraszamy do zapoznania się z naszą ofertą produktów i usług IT.
 <ul>
-    <li>Systemy zarządzania treścią (CMS,WWW).
-    <li>Sklepy internetowe (E-COMMERCE).<br>
-    <li>Systemy zarządzania relacjami z klientami (CRM).<br>
-    <li>Systemy zarządzania zarządzania danymi w badaniach i rejestrach.<br>
-    <li> Aplikacje samodzielne, dedykowane na określony system operacyjny.<br>
-    <li>Aplikacje zdalne, niezależne od środowiska działania (oparte o technologie www).<br>
-    <li>Pozycjonowanie stron (SEO).<br>
-    <li>Hosting wirtualny i dedykowany<br>
+    <li>Systemy zarządzania treścią (CMS,WWW).</li>
+    <li>Sklepy internetowe (E-COMMERCE).</li><br>
+    <li>Systemy zarządzania relacjami z klientami (CRM).</li><br>
+    <li>Systemy zarządzania zarządzania danymi w badaniach i rejestrach.</li><br>
+    <li> Aplikacje samodzielne, dedykowane na określony system operacyjny.</li><br>
+    <li>Aplikacje zdalne, niezależne od środowiska działania (oparte o technologie www).</li><br>
+    <li>Pozycjonowanie stron (SEO).</li><br>
 </ul>
+    <h3>Dane kontaktowe:</h3>
 </article>
+<article class="portfolio">
+    <h2>Nasze portfolio - przykładowe realizacje</h2>
+    <h3>Sklepy internetowe</h3>
+    <!--<p class="images_layout">
+        <a target="_blank" href="https://twoja-perfumeria.com/"><amp-img class="shop_example" src="img/twojaperfumeria-min.png" alt="Twoja-Perfumeria" height="120" width="200"></amp-img></a>
+        <a target="_blank" href="https://zkmpro.eu"> <amp-img class="shop_example" src="img/zkmpro.png" alt="ZkmPro" height="120" width="250"></amp-img></a>
+        <a target="_blank" href="https://fototapeta24.pl"><amp-img class="shop_example" src="img/fototapeta24.png" alt="fototapeta24" height="120" width="250"></amp-img></a>
+        <a target="_blank" href="https://perfumeriasilver.pl"> <amp-img class="shop_example" src="img/silver.png" alt="perfumeriasilver" height="120" width="250"></amp-img></a>
+            <a target="_blank" href="https://pszczelnictwo.com.pl"><amp-img class="shop_example" src="img/centrumpszczelarskie.png" alt="centrumpszczelarskie" height="120" width="250"></amp-img></a>
+    </p>-->
+    <button class="button_link" type="button">
+    <a target="_blank" href="https://twoja-perfumeria.com/">Twoja perfumeria</a>
+    </button>
+    <h3>Systemy dedykowane</h3>
+</article>
+<p class="footer">
+    ITM-SYSTEM Tomasz Kulikowski<br>
+    ul. Kombatantów 34/407<br>
+    66-400 Gorzów Wielkopolski<br>
+    NIP: PL 599 266 60 40<br>
+    REGON: 080078646<br>
+    telefon: <strong>+48 609-806-836</strong><br>
+    e-mail: biuro@itm-system.pl<br>
+    <br>
+    <br>
+    <br>
+    &reg ITM-SYSTEM 2006-2019
+</p>
 </body>
 </html>
